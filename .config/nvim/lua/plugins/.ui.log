@@ -1,0 +1,47 @@
+return {
+{
+	"folke/noice.nvim",
+	event = "VeryLazy",
+	dependencies = {
+		"MunifTanjim/nui.nvim",
+		"rcarriga/nvim-notify",
+	},
+	config = function()
+		require("noice").setup({
+			messages = {
+					enabled = false,
+			},
+
+			cmdline = {
+				enabled = false,
+			},
+			presets = {
+				bottom_search = true,
+				command_palette = true,
+				long_message_to_split = false,
+			},
+
+			views = {
+				cmdline_popup = {
+					border = {
+						style = "rounded",
+					},
+				},
+
+				popup = {
+					border = {
+						style = "rounded",
+					},
+				},
+
+				confirm = {
+					border = {
+						style = "rounded",
+					},
+				},
+			},
+
+		})
+	end
+}
+}

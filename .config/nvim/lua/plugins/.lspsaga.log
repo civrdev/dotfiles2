@@ -1,0 +1,17 @@
+return {
+	{
+		"nvimdev/lspsaga.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		opts = {
+			hover = {
+				max_width = 0.6,
+				open_link = "gx",
+				open_browser = "!firefox",
+			},
+		},
+		config = function(_, opts)
+			require("lspsaga").setup(opts)
+			vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", { desc = "Lspsaga Hover" })
+		end,
+	},
+}
