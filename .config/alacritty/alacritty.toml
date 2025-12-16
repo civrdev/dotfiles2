@@ -79,8 +79,7 @@ shape = "Block"
 size = 13
 
 [font.normal]
-family = "SF Mono"
-style = "Semibold"
+family = "CaskaydiaCove NF"
 
 [font.offset]
 x = 0

@@ -2,3 +2,4 @@
 .config/bob/
 .config/themes/
 .config/gtk-4.0/
+.ssh/

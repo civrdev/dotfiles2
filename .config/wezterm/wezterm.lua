@@ -2,14 +2,7 @@ local wezterm = require 'wezterm'
 
 local config = {}
 
-config.font = wezterm.font {
-	family = "SF Mono",
-	weight = "Medium"
-}
 config.font_size = 12
-
-config.harfbuzz_features = { "calt", "clig", "liga" }
-config.enable_wayland = true
 
 config.window_padding = {
 	left = 4,
@@ -20,7 +13,7 @@ config.window_padding = {
 
 config.enable_scroll_bar = false
 config.enable_wayland = true
-config.front_end = "WebGpu"
+config.front_end = "OpenGL"
 
 config.colors = {
 	foreground = '#7DCFFF',
